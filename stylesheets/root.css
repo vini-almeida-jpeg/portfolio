@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+:root{
+    --black:#202020; 
+    --cherry:#CC3652;
+    --cherry-light:#DB7184;
+    --cherry-dark:#B72E48;
+    --grey-n1:#909090; 
+    --grey-n2:#BFBFBF; 
+}
+
+header{
+    background-color: var(--black);
+}
+
+section, header, footer{
+    padding: 50px 0px;
+}
+
+/*Footer CSS*/
+footer{
+    background-color:#F5F5F5;
+}
+
+.footer-wrapper{
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.footer-upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-subdomains{
+    display: flex;
+    flex-flow: row wrap; 
+    column-gap:60px; 
+}
+
+#logo-footer{
+    width: 260px; 
+    fill:var(--black);
+}
+
+#logo-footer:hover{ 
+    fill: var(--cherry);
+}
+
+#logo-footer:active{ 
+    fill: var(--cherry-light);
+}
+
+#logo-footer:visited{ 
+    fill: var(--cherry-dark);
+}
+
+.footer-subdomains a{
+    text-decoration: none;
+    color: var(--grey-n1);
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.footer-subdomains a:hover, .email-addresses a:hover{
+    color:var(--cherry);
+}
+
+.footer-subdomains a:active, .email-addresses a:active{
+    color:var(--cherry-light);
+}
+
+.footer-subdomains a:visited .email-addresses a:active{
+    color: var(--grey-n2);
+}
+
+hr{
+    margin-top: 30px;
+    margin-bottom:20px; 
+    border-top: 3px solid #C9C9C9; 
+}
+
+.footer-lower{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap:32px;  
+}
+
+.email-addresses{
+    display: flex;
+    flex-flow:row wrap;
+    column-gap: 32px; 
+}
+
+.email-addresses a{
+    text-decoration: none; 
+    font-size:21px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.sm-icons {
+    display: flex;
+    column-gap: 18px;
+}
