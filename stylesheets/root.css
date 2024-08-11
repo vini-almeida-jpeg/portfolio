@@ -5,8 +5,13 @@
     font-family: "Sofia Sans", sans-serif;
 }
 
+body{
+    max-width: 100vw;
+}
+
 :root{
     --black:#202020; 
+    --white:#FCFCFC; 
     --cherry:#CC3652;
     --cherry-light:#DB7184;
     --cherry-dark:#B72E48;
@@ -14,12 +19,25 @@
     --grey-n2:#BFBFBF; 
 }
 
+
 header{
     background-color: var(--black);
 }
 
-section, header, footer{
-    padding: 50px 0px;
+section{
+    padding: 30px 0px;
+}
+
+section:nth-of-type(1){
+    padding-top:50px; 
+}
+
+section:nth-of-type(5){
+    padding-bottom:50px;
+}
+
+header, footer{
+    padding:50px 0px;
 }
 
 /*Footer CSS*/
@@ -28,8 +46,9 @@ footer{
 }
 
 .footer-wrapper{
-    max-width: 1440px;
+    max-width: 1320px; 
     margin:0 auto;
+    padding: 0px 30px;
 }
 
 .footer-upper{
@@ -37,17 +56,24 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap:60px
 }
 
 .footer-subdomains{
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap; 
-    column-gap:60px; 
+    width: 100%;
+    max-width: 615px; 
 }
 
 #logo-footer{
     width: 260px; 
     fill:var(--black);
+}
+
+#logo-footer:visited{ 
+    fill: var(--cherry-dark);
 }
 
 #logo-footer:hover{ 
@@ -58,15 +84,17 @@ footer{
     fill: var(--cherry-light);
 }
 
-#logo-footer:visited{ 
-    fill: var(--cherry-dark);
-}
+
 
 .footer-subdomains a{
     text-decoration: none;
     color: var(--grey-n1);
     font-size: 21px;
     font-weight: 500;
+}
+
+.footer-subdomains a:visited .email-addresses a:visited{
+    color: var(--grey-n2);
 }
 
 .footer-subdomains a:hover, .email-addresses a:hover{
@@ -77,11 +105,7 @@ footer{
     color:var(--cherry-light);
 }
 
-.footer-subdomains a:visited .email-addresses a:active{
-    color: var(--grey-n2);
-}
-
-hr{
+.footer-hr{
     margin-top: 30px;
     margin-bottom:20px; 
     border-top: 3px solid #C9C9C9; 
@@ -111,4 +135,68 @@ hr{
 .sm-icons {
     display: flex;
     column-gap: 18px;
+}
+
+.sm-icons img {
+    width: 32px;
+}
+
+@media screen and (min-width:650px) and (max-width:850px){
+    #logo-footer{
+        width:220px; 
+    }
+
+    .footer-subdomains{
+        max-width: fit-content; 
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 15px;
+        row-gap: 6px;
+    }
+
+    .footer-subdomains a{
+        font-size:20px;
+        width:fit-content;
+    }
+}
+
+@media screen and (max-width:649px){
+    #logo-footer{
+        width:240px; 
+        position: relative;
+        left:-6px;
+    }
+
+    .footer-upper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 21px 0px;
+    }
+
+    .footer-subdomains{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px 12px;
+    }
+
+    .footer-lower{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 9px; 
+    }
+
+    .email-addresses{
+        row-gap:6px;
+    }
+
+    .footer-subdomains a, .email-addresses a{
+        font-size:20px;
+        width:fit-content;
+    }
+
+    .footer-hr{
+        margin:20px 0px;
+    }
 }
