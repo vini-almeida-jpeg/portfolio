@@ -30,10 +30,10 @@ var swiper = new Swiper(".ebooks-swiper", {
             slidesPerView: 1, freeMode:'true', 
         },
 
-        780: {slidesPerView: 1, freeMode:'true', 
+        780: {slidesPerView: 2, freeMode:'true', 
         },
 
-        960: {slidesPerView:2, freeMode:'true',
+        1080: {slidesPerView:3, freeMode:'true',
         },
     },
 

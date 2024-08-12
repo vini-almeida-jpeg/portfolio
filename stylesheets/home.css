@@ -1,53 +1,141 @@
+/*Whole Page Responsiveness*/
+    @media screen and (max-width:768px) {
+        section {
+            padding: 15px 0px;
+        }
+        
+        section:nth-of-type(1){
+            padding-top:30px;
+        } 
+        
+        section:nth-of-type(6){
+            padding-bottom:30px;
+        }
+
+        h2{
+            font-size:24px !important;
+        }
+        
+    }
+
 /*Header Styling*/
+    .header-wrapper{
+        max-width: 1500px;
+        padding: 0px 30px;
+        margin: 0 auto;
 
-.header-wrapper{
-    max-width: 1500px;
-    padding: 0px 30px;
-    margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        column-gap: 150px;
+        justify-content: center;
+        overflow: hidden;
+    }
 
-    display: flex;
-    flex-direction: row;
-    column-gap: 150px;
-    justify-content: center;
-    overflow: hidden;
-}
+    #logo-main{
+        max-width: 360px;
+        width: 100%;
+        fill: var(--white);
+        position: relative;
+        left: -9px;
+    }
 
-#logo-main{
-    max-width: 400px;
-    width: 100%;
-    fill: var(--white);
-    position: relative;
-    left: -9px;
-}
+    .header-text{
+        width: 80%;
+        max-width: 450px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 24px;
+    }
 
-.header-text{
-    width: 80%;
-    max-width: 36vw; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 24px;
-}
+    #header-tag{
+        font-size: 27px; 
+        width: fit-content;
+        color: var(--cherry);
+        border: 3px solid var(--cherry);
+        padding: 6px 12px; 
+        border-radius: 6px;
+    }
 
-#header-tag{
-    font-size: 27px; 
-    width: fit-content;
-    color: var(--cherry);
-    border: 3px solid var(--cherry);
-    padding: 6px 12px; 
-    border-radius: 6px;
-}
+    #header-text{
+        color: var(--white);
+        font-size: 21px; 
+    }
 
-#header-text{
-    color: var(--white);
-    font-size: 21px; 
-}
+    .header-image{
+        width: 100%;
+        max-width: 360px;
+        border-radius: 5px; 
+    }
 
-header img{
-    width: 360px;
-    height: auto; 
-    border-radius: 9px; 
-}
+    .header-image img{
+        width: 100%;
+        height: auto;
+        border-radius: 5px; 
+    }
+
+    /*Header Responsiveness*/
+        @media screen and (max-width:609px){ 
+        /*Mobile Screens*/
+            .header-wrapper{
+                flex-direction: column; 
+                row-gap:36px;
+            }
+
+            .header-text{
+                width: 100%;
+                max-width: 420px;
+            }
+
+            #logo-main{
+                max-width: 250px; 
+                left:-4px;
+            }
+
+            #header-tag{
+                font-size:21px;
+            }
+
+            #header-text{
+                font-size:18px; 
+            }
+
+            header img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media screen and (min-width:610px) and (max-width:860px) {
+            .header-wrapper{
+                column-gap: 0;
+                justify-content: space-between;
+                align-items: center; 
+            }
+
+            .header-image{
+                max-width: 36vw; 
+            }
+
+            .header-text{
+                width: 100%;
+                max-width: 40vw;  
+            } 
+
+            #logo-main{
+                max-width: 270px; 
+                left:-4px;
+            }
+
+            #header-tag{
+                font-size:21px;
+            }
+
+            #header-text{
+                font-size:18px;  
+            }
+        }
+        
 
 
 /*Landing Page Section Styling*/
@@ -162,6 +250,57 @@ h2{
     border-radius: 5px;
 }
 
+    /*Ebook Overlay Styling*/
+        .ebook-thumbnail-overlay {
+            position:absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            border-radius: 5px;
+            transition: .1s ease;
+            padding: 15px;
+
+            display: flex;
+            row-gap: 6px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../assets/thumbnail-ebook-inpulse-logo.png);
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: 125% 50%;
+
+            background-color: var(--cherry);
+        }
+
+        .ebook-brand{
+            font-size: 32px;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .ebook-name{
+            font-size: 21px;
+            color: var(--white);
+            font-weight: 400;
+            text-align: center;
+            max-width: 340px;  
+        }
+        
+        .ebook-thumbnail-overlay img{
+            border-radius: 5px;
+            width: 100%;
+            height: 285px;
+        }
+        
+        .ebook-thumbnail:hover .ebook-thumbnail-overlay {
+            opacity: 1;
+        }
+
 
 /*KVs Ads Styling Overlay*/
 
@@ -209,6 +348,47 @@ h2{
     width: 100%;
     border-radius: 5px;
 }
+
+/*Project Categories Responsiveness*/
+    @media screen and (max-width:420px) {
+        /*Landing Page and Email Marketing Thumbnails - I*/
+            .lp-thumbnail img, .lp-thumbnail-overlay-gif img{
+                height: 170px; 
+            } 
+
+        /*Ebook Thumbnails*/
+            .overlay-thumbnail img{
+                height: 180px;
+            }
+
+            .ebook-brand{
+                font-size:22px; 
+            }
+
+            .ebook-name{
+                font-size:16px;
+            }
+
+            .ebook-thumbnail-overlay{
+                background-size: 160px;
+                background-position: calc(100% + 12vw) 50%;
+            }
+        
+        
+    }
+
+    @media screen and (min-width:421px) and (max-width:720px) {
+        /*Landing Page and Email Marketing Thumbnails - II*/
+            .lp-thumbnail img, .lp-thumbnail-overlay-gif img{
+                height: 210px;  
+            } 
+
+        /*Ebook Thumbnails*/
+            .ebook-thumbnail-overlay{
+                background-size: 240px; 
+                background-position: calc(100% + 12vw) 50%;
+            }
+    }
 
 
 
