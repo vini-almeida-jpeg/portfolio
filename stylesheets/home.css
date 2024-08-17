@@ -19,6 +19,9 @@
     }
 
 /*Header Styling*/
+    header{
+        padding: 50px 0px;
+    }
     .header-wrapper{
         max-width: 1500px;
         padding: 0px 30px;
