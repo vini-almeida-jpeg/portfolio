@@ -141,11 +141,13 @@ header, footer{
                 background: var(--black);
                 transition: 0.2s ease;
                 overflow: hidden;
+                z-index: 999;
             }
 
             .nav-bar.active{
                 height: 190px; 
                 transition: 0.4s ease;
+                z-index: 999;
             }
 
             .nav-bar.active ul{
