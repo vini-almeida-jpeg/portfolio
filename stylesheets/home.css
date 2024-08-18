@@ -12,9 +12,9 @@
             padding-bottom:30px;
         }
 
-        h2{
+        /*h2{
             font-size:24px !important;
-        }
+        }*/
         
     }
 
@@ -150,12 +150,12 @@
     overflow: hidden;
 }
 
-h2{
+/*h2{
     font-size:30px;
     font-weight: 600;
     margin-bottom:18px;
     color: var(--black); 
-}
+}*/
 
 .thumbnail-wrapper{
     display: flex;
@@ -324,33 +324,35 @@ h2{
     border-radius: 5px;
 }
 
-.bw-thumbnail {
-    filter: saturate(0) opacity(0.5);
-}
+@media screen and (min-width:860px) {
+    .bw-thumbnail {
+        filter: saturate(0) opacity(0.5);
+    }
 
-.bw-thumbnail:hover{
-    filter: saturate(1) opacity(1);
-    transition: .2s ease;
+    .bw-thumbnail:hover{
+        filter: saturate(1) opacity(1);
+        transition: .2s ease;
+    }
 }
 
 /*KVs Social Media Styling*/
 
-.kv-sm-wrapper{
-    width: 100%;
-    overflow: hidden;
-}
+    .kv-sm-wrapper{
+        width: 100%;
+        overflow: hidden;
+    }
 
-.socialmedia-thumbnail{
-    width: 100%;
-    height: fit-content;
-    border-radius: 5px;
-}
+    .socialmedia-thumbnail{
+        width: 100%;
+        height: fit-content;
+        border-radius: 5px;
+    }
 
 
-.socialmedia-thumbnail img{
-    width: 100%;
-    border-radius: 5px;
-}
+    .socialmedia-thumbnail img{
+        width: 100%;
+        border-radius: 5px;
+    }
 
 /*Project Categories Responsiveness*/
     @media screen and (max-width:420px) {
