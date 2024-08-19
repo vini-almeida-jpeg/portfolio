@@ -67,12 +67,11 @@ body{
     h2{
         font-size:30px; 
         font-weight: 700;
-        margin-bottom:18px;
         color: var(--black); 
     }
 
     /*Header Types Mobile*/
-        @media screen and (max-width:768px){
+        @media screen and (max-width:540px){
             h2{
                 font-size:22px !important;
             }
@@ -121,9 +120,9 @@ body{
 
         .nav-bar ul{
             width: fit-content;
-            max-width: 660px;
+            max-width: 600px;
             display: flex;
-            column-gap: 60px;  
+            column-gap: 42px;  
         }
     
         #logo-nav{
@@ -228,7 +227,7 @@ body{
         justify-content: space-between;
         flex-flow: row wrap; 
         width: 100%;
-        max-width: 650px; 
+        max-width: 580px; 
     }
 
     #logo-footer{
@@ -359,7 +358,7 @@ body{
         }
 
         .footer-lower-icon svg{
-            width: 30px;
+            width: 32px;
         }
 
         .email-addresses{

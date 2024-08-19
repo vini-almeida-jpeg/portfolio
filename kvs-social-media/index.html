@@ -75,103 +75,66 @@
 
     <section id="category-kvs-social-media">
         <div class="section-wrapper">
-            <h2>KVs para Social Media</h2>
-            <div class="thumbnail-wrapper kv-sm-wrapper kv-sm-swiper">
+            <h2>Voyager</h2> 
+            <div class="kv-sm-swiper swiper-1">
                 <div class="swiper-wrapper">
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post">
                             <img src="../assets/thumbnail-socialmedia.png" alt=""> 
                         </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post">
                             <img src="../assets/thumbnail-socialmedia.png" alt=""> 
                         </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post">
                             <img src="../assets/thumbnail-socialmedia.png" alt=""> 
                         </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
-                            <img src="../assets/thumbnail-socialmedia.png" alt=""> 
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post" id="#4-page-carrousel">
+                            <img src="../assets/sm-1.2.jpg" alt=""> 
                         </div>
-                    </a>
-  
+                    </div>
                 </div>
+                <div class="swiper-scrollbar"></div>
             </div>
+
         </div>
     </section>
 
     <section id="category-kvs-social-media">
         <div class="section-wrapper">
-            <h2>KVs para Social Media</h2>
-            <div class="thumbnail-wrapper kv-sm-wrapper kv-sm-swiper">
+            <h2>Voyager</h2> 
+            <div class="kv-sm-swiper swiper-2">
                 <div class="swiper-wrapper">
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post">
                             <img src="../assets/thumbnail-socialmedia.png" alt=""> 
                         </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post">
                             <img src="../assets/thumbnail-socialmedia.png" alt=""> 
                         </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post">
                             <img src="../assets/thumbnail-socialmedia.png" alt=""> 
                         </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
-                            <img src="../assets/thumbnail-socialmedia.png" alt=""> 
+                    </div>
+                    <div class="swiper-slide"> 
+                        <div class="socialmedia-post" id="#4-page-carrousel">
+                            <img src="../assets/sm-1.2.jpg" alt=""> 
                         </div>
-                    </a>
-  
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="category-kvs-social-media">
-        <div class="section-wrapper">
-            <h2>KVs para Social Media</h2>
-            <div class="thumbnail-wrapper kv-sm-wrapper kv-sm-swiper">
-                <div class="swiper-wrapper">
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
-                            <img src="../assets/thumbnail-socialmedia.png" alt=""> 
-                        </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
-                            <img src="../assets/thumbnail-socialmedia.png" alt=""> 
-                        </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
-                            <img src="../assets/thumbnail-socialmedia.png" alt=""> 
-                        </div>
-                    </a>
-
-                    <a href="./kvs-social-media/" class="bw-thumbnail swiper-slide">
-                        <div class="socialmedia-thumbnail">
-                            <img src="../assets/thumbnail-socialmedia.png" alt=""> 
-                        </div>
-                    </a>
-  
-                </div>
-            </div>
+            <!--Scroll bar-->
+            <div class="swiper-scrollbar-2"></div>
         </div>
     </section>
 
@@ -246,7 +209,30 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!--Social Media KVs JS-->
-<script src="../scripts/kvs-socialm.js"> 
+<script>
+    var swiper = new Swiper(".swiper-1", {
+    slidesPerView: "auto", 
+    spaceBetween: 15, 
+    freeMode:'true',
+    grabCursor: 'true',
+    scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+});
+</script> 
+
+<script>
+    var swiper = new Swiper(".swiper-2", {
+    slidesPerView: "auto",
+    spaceBetween: 15, 
+    freeMode:'true',
+    grabCursor: 'true',
+    pagination: {
+        el: ".swiper-pagination-2",
+        type:'progressbar',
+    }
+});
+</script> 
 
 </script>
 

@@ -3,9 +3,13 @@
         padding:30px 0px;
     }
 
-    .nav-bar ul li:nth-of-type(3) a{
-        color:#d3d2d2;
+    /*.nav-bar ul li:nth-of-type(3) a{
+        color:#bababa;
     }
+
+    .footer-subdomains a:nth-of-type(3){
+        color: #444444;
+    }*/
 
     .section-wrapper{
         max-width: 1320px;
@@ -15,8 +19,8 @@
     }
 
     h2{
-        font-size:36px;
-        font-weight: 600;
+        font-size:32px;
+        /*font-weight: 600;*/
     }
 
     /*.email-tag{
@@ -31,12 +35,22 @@
         border-radius: 6px;
     }*/
 
+    section:nth-of-type(1){
+        padding: 50px 0px 25px;
+    }
+
+    section:nth-of-type(2){
+        padding: 25px 0px 50px; 
+    }
+
+
+
 /*Styling Swiper Slide*/
     .swiper-header{
         display: flex;
         align-items: center;
         margin-bottom:18px;
-        column-gap: 18px;
+        column-gap: 15px;
         position: relative;
     }
 
@@ -95,11 +109,11 @@
         
         display: flex;
         flex-direction: row;
-        column-gap:18px;
+        column-gap:15px;
     }
 
     .swiper-pagination-bullet {
-        font-size: 21px;
+        font-size: 19px;
         font-weight: 600;
         color: var(--cherry);
         opacity: 1;
@@ -122,41 +136,48 @@
     }
 
 /*Viewport Width < 768px* (Mobile)*/
-    @media screen and (max-width:786px){
-        h2{
+    @media screen and (max-width:768px){
+        /*h2{
             font-size:21px;
+        }*/
+
+        section:nth-of-type(1){
+            padding:30px 0px 15px;
+        }
+
+        section:nth-of-type(2){
+            padding:15px 0px 40px;
         }
 
         /*Mobile Swiper Pagination*/
-        .swiper-header{
-            flex-wrap: wrap;
-            row-gap: 5px;
-        }
-        .swiper-pagination-bullet{
-            display: none;
+            .swiper-header{
+                flex-wrap: wrap;
+                row-gap: 5px;
+            }
+            .swiper-pagination-bullet{
+                display: none;
 
-            font-size: 16px;
-            padding: 3px 8px;
-            border-radius: 4px;
+                font-size: 16px;
+                padding: 3px 8px;
+                border-radius: 4px;
 
 
-            width: auto;
-            height: fit-content;
-            margin: 0 !important;
-        }
+                width: auto;
+                height: fit-content;
+                margin: 0 !important;
+            }
 
-        .swiper-pagination-bullet-active{
-            display: block;
-        }
+            .swiper-pagination-bullet-active{
+                display: block;
+            }
 
         /*Mobile Swiper Content*/
-        .swiper-slide{
-            padding:15px;
-        }
+            .swiper-slide{
+                padding:15px;
+            }
 
-        .swiper-content img{
-            margin: 0 auto;
-        }
-
+            .swiper-content img{
+                margin: 0 auto;
+            }
 
     }

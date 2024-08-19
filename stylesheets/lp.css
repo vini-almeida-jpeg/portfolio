@@ -3,9 +3,9 @@
         padding:30px 0px;
     }
 
-    .nav-bar ul li:nth-of-type(3) a{
+    /*.nav-bar ul li:nth-of-type(3) a{
         color:#d3d2d2;
-    }
+    }*/
 
     .section-wrapper{
         max-width: 1320px;
@@ -14,9 +14,21 @@
         overflow: hidden;
     }
 
+    section:nth-of-type(1){
+        padding:50px 0px 20px;
+    }
+
+    section:nth-of-type(2){
+        padding:20px 0px 20px;
+    }
+
+    section:nth-of-type(3){
+        padding:20px 0px 50px;
+    }
+
     h2{
-        font-size:36px;
-        font-weight: 600;
+        font-size:32px;
+        /*font-weight: 600;*/
     }
 
     h3{
@@ -88,7 +100,44 @@
             }
         }
 
-    /*Styling Landing Page Recommendation*/
+/*Landing Page Container Mobile Widths*/
+    @media screen and (max-width:768px) {
+        section:nth-of-type(1){
+            padding:30px 0px 15px;
+        }
+    
+        section:nth-of-type(2){
+            padding:15px 0px 15px;
+        }
+
+        section:nth-of-type(3){
+            padding-top:15px;
+        }
+
+        .landing-page-header{
+            flex-wrap: wrap;
+            row-gap: 5px;
+        }
+
+        .header-tag{
+            font-size:16px;
+            padding: 3px 8px;
+            border-radius: 4px;
+
+            width: auto;
+            height: fit-content;
+        }
+
+        .landing-page-container{
+            padding:15px;
+        }
+
+        .landing-page-container img{
+            margin-bottom:0px;
+        }
+    }
+
+ /*Styling Landing Page Recommendation*/
     .thumbnail-wrapper{
         display: flex;
         flex-direction: row;
@@ -145,4 +194,15 @@
         .lp-thumbnail:hover .lp-thumbnail-overlay-gif {
             opacity: 1;
         }
+
+    /*landing Page Thumbnail Overlay - Mobile*/
+        @media screen and (max-width:540px) {
+            .lp-thumbnail img, .lp-thumbnail-overlay-gif img{
+                height: 170px; 
+            }
+
+            h3{
+                font-size:21px;
+            }
+        } 
 

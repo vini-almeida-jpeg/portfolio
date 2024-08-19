@@ -1,12 +1,25 @@
-.nav-bar ul li:nth-of-type(4) a{
-    color:#d3d2d2;
-}
+/*Basic Page Styling*/
 
-h2{
-    margin-bottom:18px;
-    font-size:27px;
-    font-weight: 600;
-}
+    /*.nav-bar ul li:nth-of-type(4) a{
+        color:#d3d2d2;
+    }*/
+
+    h2{
+        font-size:30px;
+        margin-bottom:18px; 
+    }
+
+    section:nth-of-type(1){
+        padding:30px 0px 25px;
+    }
+
+    section:nth-of-type(2){
+        padding:25px 0px 25px;
+    }
+
+    section:nth-of-type(3){
+        padding:25px 0px 50px;
+    }
 
 /*Styling KV Projects - Mobile*/
 @media screen and (max-width:623px) {
@@ -18,11 +31,15 @@ h2{
     }
 
     section:nth-of-type(1){
-        padding-top:30px; 
+        padding:30px 0px 15px;
+    }
+
+    section:nth-of-type(2){
+        padding:15px 0px 15px;
     }
     
-    section:nth-of-type(5){
-        padding-bottom:30px;
+    section:nth-of-type(3){
+        padding:15px 0px 30px; 
     }
     
     .kv-ads-desktop{display: none;}
