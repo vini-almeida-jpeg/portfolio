@@ -37,58 +37,58 @@ h3{
 }
 
 /*Styling Landing Page Container*/
-.ebook-header{
-    display: flex;
-    align-items: center;
-    margin-bottom:18px;
-    column-gap: 18px;
-    position: relative;
-}
+    .ebook-header{
+        display: flex;
+        align-items: center;
+        margin-bottom:18px;
+        column-gap: 18px;
+        position: relative;
+    }
 
-.ebook-header-tags{
-    display: flex;
-    column-gap:15px;
-}
+    .ebook-header-tags{
+        display: flex;
+        column-gap:15px;
+    }
 
-.header-tag{
-    font-size:21px;
-    font-weight: 600;
-    color: var(--cherry);
-    
-    border: 2.5px solid var(--cherry); 
-    padding: 5px 10px;
-    border-radius: 6px;
-    background-color: transparent;
-}
+    .header-tag{
+        font-size:21px;
+        font-weight: 600;
+        color: var(--cherry);
+        
+        border: 2.5px solid var(--cherry); 
+        padding: 5px 10px;
+        border-radius: 6px;
+        background-color: transparent;
+    }
 
-.ebook-container{
-    background-color: #eeeeee;
-    border-radius: 5px;
-    padding: 48px; 
-    border:1px solid;
-    max-height: 560px;
-    overflow-y: scroll;
-    position: relative;
-}
+    .ebook-container{
+        background-color: #eeeeee;
+        border-radius: 5px;
+        padding: 48px; 
+        border:1px solid;
+        max-height: 560px;
+        overflow-y: scroll;
+        position: relative;
+    }
 
-.ebook-container-content{ 
-    max-width: 860px;
-    margin: 0 auto;
-}
+    .ebook-container-content{ 
+        max-width: 860px;
+        margin: 0 auto;
+    }
 
-.ebook-container-content img{
-    width: 100%;
-    border-radius: 6px;   
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.05)); 
-}
+    .ebook-container-content img{
+        width: 100%;
+        border-radius: 6px;   
+        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.05)); 
+    }
 
-#ebook-2 > div > div.ebook-container {
-    max-height: 600px;
-}
+    #ebook-2 > div > div.ebook-container {
+        max-height: 600px;
+    }
 
 
-#ebook-2 > div > div.ebook-container > div{
-    max-width: 360px;
+    #ebook-2 > div > div.ebook-container > div{
+        max-width: 360px;
 }
 
 /*Swiper Container scrollbar Customization*/
