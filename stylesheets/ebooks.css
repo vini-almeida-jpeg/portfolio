@@ -3,9 +3,9 @@ header{
     padding:30px 0px;
 }
 
-/*.nav-bar ul li:nth-of-type(3) a{
+.nav-bar ul li:nth-of-type(2) a{
     color:#d3d2d2;
-}*/
+} 
 
 .section-wrapper{
     max-width: 1320px;
@@ -52,7 +52,7 @@ h3{
 
     .header-tag{
         font-size:21px;
-        font-weight: 600;
+        font-weight: 700; 
         color: var(--cherry);
         
         border: 2.5px solid var(--cherry); 
@@ -124,8 +124,12 @@ h3{
         padding:15px 0px 15px;
     }
 
-    section:nth-of-type(3){
+    section:nth-of-type(3){ 
         padding:15px 0px 40px;
+    }
+
+    h2{
+        font-size:22px;  
     }
 
     .ebook-header{
@@ -137,6 +141,7 @@ h3{
         font-size:16px;
         padding: 3px 8px;
         border-radius: 4px;
+        border: 2px solid var(--cherry);
 
         width: auto;
         height: fit-content;
