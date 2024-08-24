@@ -29,9 +29,12 @@ section:nth-of-type(1){
 }
 
 .swiper-slide{
-    width: auto !important; 
+    width: auto;  
 }
 
+.swiper-four{
+    width: auto;
+}
 
 .kv-sm-swiper{
     width: 100%;
@@ -52,8 +55,18 @@ section:nth-of-type(1){
     border-radius: 5px;
 }
 
-#\#4-page-carrousel{
+#\#4-page-carrousel-desktop{
     max-width: 1440px;
+}
+
+@media screen and (max-width:480px){
+    .swiper-slide{
+        width: 100%;
+    }
+
+    .swiper-four{
+        width: 400%;
+    }
 }
 
 /*#category-kvs-social-media > div > div.swiper-pagination-1.swiper-pagination-progressbar.swiper-pagination-horizontal, #category-kvs-social-media > div > div.swiper-pagination-2.swiper-pagination-progressbar.swiper-pagination-horizontal{
@@ -79,19 +92,33 @@ section:nth-of-type(1){
     
 }*/
 
-#category-kvs-social-media > div > div > div.swiper-scrollbar.swiper-scrollbar-horizontal{
-    width: 60%;
-    max-width: 360px;
-    position:absolute;
-    bottom:0px !important;
-    top: initial;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
 
-    height: 12px;
-    border-radius: 10px;  
-    background-color: #DBDBDB;
-    border: 1px solid var(--grey-n1);  
-}
+/*Styling Scroll Bar*/
+    .swiper-scrollbar{
+        width: 60%; 
+        max-width: 320px; 
+        position:absolute; 
+        bottom:0px !important;
+        top:initial;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+        width: 60%; 
+        max-width: 300px;  
+        height: 12px;
+        border-radius: 10px;  
+        background-color: #DBDBDB;
+        border: 1px solid var(--grey-n1);
+    }
+
+    .swiper-scrollbar-drag{
+        background-color: var(--cherry); 
+        width: 100%; 
+        cursor: grabbing; 
+    }
+
+    

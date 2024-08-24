@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 
+    
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!--Stylesheets-->
     <link rel="stylesheet" href="../stylesheets/root.css">
     <link rel="stylesheet" href="../stylesheets/kvs-socialm.css">
 
-    <!--Swiper CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -93,9 +95,9 @@
                             <img src="../assets/thumbnail-socialmedia.png" alt=""> 
                         </div>
                     </div>
-                    <div class="swiper-slide"> 
-                        <div class="socialmedia-post" id="#4-page-carrousel">
-                            <img src="../assets/sm-1.2.jpg" alt=""> 
+                    <div class="swiper-slide swiper-four"> 
+                        <div class="socialmedia-post" id="#4-page-carrousel-desktop">
+                            <img src="../assets/sm-1.2.0.jpg" alt=""> 
                         </div>
                     </div>
                 </div>
@@ -213,11 +215,15 @@
     var swiper = new Swiper(".swiper-1", {
     slidesPerView: "auto", 
     spaceBetween: 15, 
-    freeMode:'true',
+    freeMode: true,
     grabCursor: 'true',
     scrollbar: {
         el: ".swiper-scrollbar",
+        draggable: true,  
+        snapOnRelease: false,
       },
+
+    
 });
 </script> 
 
@@ -225,7 +231,7 @@
     var swiper = new Swiper(".swiper-2", {
     slidesPerView: "auto",
     spaceBetween: 15, 
-    freeMode:'true',
+    freeMode: true,
     grabCursor: 'true',
     pagination: {
         el: ".swiper-pagination-2",
