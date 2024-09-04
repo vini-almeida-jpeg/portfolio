@@ -1,21 +1,21 @@
 //LP/Email Swiperr//
-var swiper = new Swiper(".lp-swiper", {
-    slidesPerView: 2,
-    spaceBetween: 15, 
-    freeMode:true,
-    grabCursor: 'true',
+    var swiper = new Swiper(".lp-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 15, 
+        freeMode:true,
+        grabCursor: 'true',
 
-    breakpoints:{
-        0: {
-            slidesPerView: 1, freeMode:'true', 
+        breakpoints:{
+            0: {
+                slidesPerView: 1, freeMode:'true', loop: true,
+            },
+
+            780: {spaceBetween:15, slidesPerView: 2, freeMode:'true', loop: false,
+            },
+
         },
 
-        780: {spaceBetween:15, slidesPerView: 2, freeMode:'true', 
-        },
-
-    },
-
-});
+    });
 
 //Ebook Swiper//
 
@@ -27,13 +27,13 @@ var swiper = new Swiper(".ebooks-swiper", {
 
     breakpoints:{
         0: {
-            slidesPerView: 1, freeMode:'true', 
+            slidesPerView: 1, freeMode:'true', loop: true,
         },
 
-        780: {slidesPerView: 2, freeMode:'true', 
+        780: {slidesPerView: 2, freeMode:'true', loop: false,
         },
 
-        1080: {slidesPerView:3, freeMode:'true',
+        1080: {slidesPerView:3, freeMode:'true', loop: false,
         },
     },
 
@@ -52,13 +52,13 @@ var swiper = new Swiper(".kv-ads-swiper", {
 
     breakpoints:{
         0: {
-            slidesPerView: 1, freeMode:'true', 
+            slidesPerView: 1, freeMode:'true', loop: true,
         },
 
-        580: {spaceBetween:15, slidesPerView: 2, freeMode:'true', 
+        580: {spaceBetween:15, slidesPerView: 2, freeMode:'true', loop: false,
         },
 
-        960: {slidesPerView:3, slidesPerGroup: 2, 
+        960: {slidesPerView:3, slidesPerGroup: 2, loop: false,
         },
     },
 
@@ -74,13 +74,13 @@ var swiper = new Swiper(".kv-sm-swiper", {
 
     breakpoints:{
         0: {
-            slidesPerView: 1, freeMode:'true', 
+            slidesPerView: 1, freeMode:'true', loop: true, 
         },
 
-        580: {spaceBetween:15, slidesPerView: 2, freeMode:'true', 
+        580: {spaceBetween:15, slidesPerView: 2, freeMode:'true', loop: true,
         },
 
-        960: {slidesPerView:4, freeMode:'true',
+        960: {slidesPerView:4, freeMode:'true', loop: false,
         },
     },
 

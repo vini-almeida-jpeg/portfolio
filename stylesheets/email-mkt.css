@@ -60,7 +60,7 @@
         padding-top: 36px;
         border:1px solid;
         max-height: 500px;
-        overflow-y: scroll;
+        overflow-y: scroll !important;
         position: relative;
     }
 
@@ -85,7 +85,7 @@
             
             .swiper-slide::-webkit-scrollbar-track {
                 background: #c9c8c8;
-                overflow: hidden;
+                overflow: scroll;
             }
             
             .swiper-slide::-webkit-scrollbar-thumb {

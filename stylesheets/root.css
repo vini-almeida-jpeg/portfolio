@@ -282,6 +282,10 @@ body{
         height: fit-content;
     }
 
+    .footer-lower-icon{
+        position: relative;
+    }
+
     .footer-lower-icon svg{
         width: 40px; 
         height: 40px;   
@@ -307,8 +311,65 @@ body{
             fill: var(--cherry-light);
         }
     }
-    
 
+
+    /*Footer Icon Tooltip Text*/
+        @media screen and (min-width:768px) {
+            .icon-text{
+                font-weight: 600;
+                visibility: hidden;
+                width: max-content; 
+                background-color: var(--cherry);
+                color: var(--white);
+                text-align: center;
+                padding: 6px 12px;
+                border-radius: 6px;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 24px; 
+
+                position: absolute;
+                left: 55px; 
+                opacity: 0;
+                z-index:100;
+                transition: opacity 0.2s;
+                align-self: center;
+            }
+
+            div.footer-lower > div:nth-child(1) > p { 
+                bottom:3px;
+            }
+
+            div.footer-lower > div:nth-child(2) > p { 
+                bottom:10px; 
+            }
+
+            div.footer-lower > div:nth-child(3) > p { 
+                bottom:3px;
+            }
+
+            .footer-lower-icon:hover .icon-text{
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .footer-lower-icon .icon-text::after{
+                content: " ";
+                position: absolute;
+                top: 50%;
+                right: 100%; /* To the left of the tooltip */
+                margin-top: -6px;
+                border-width: 6px; 
+                border-style: solid;
+                border-color: transparent var(--cherry) transparent transparent;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .icon-text{
+                visibility: hidden;
+                display: none;
+            }
+        }
+        
     @media screen and (min-width:650px) and (max-width:850px){
         #logo-footer{
             width:220px; 
