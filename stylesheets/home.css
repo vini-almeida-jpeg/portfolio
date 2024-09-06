@@ -55,7 +55,7 @@
 
     .header-text{
         width: 80%;
-        max-width: 390px;   
+        max-width: 420px;   
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -99,7 +99,7 @@
 
             .header-text{
                 width: 100%;
-                max-width: 330px;    
+                max-width: 360px;    
             }
 
             #logo-main{

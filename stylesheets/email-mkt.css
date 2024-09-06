@@ -4,7 +4,7 @@
     }
 
     .nav-bar ul li:nth-of-type(3) a{
-        color:#bababa;
+        color:var(--grey-n3);
     }
 
     /*.footer-subdomains a:nth-of-type(3){
@@ -42,8 +42,6 @@
     section:nth-of-type(2){
         padding: 25px 0px 50px; 
     }
-
-
 
 /*Styling Swiper Slide*/
     .swiper-header{
@@ -113,7 +111,7 @@
     }
 
     .swiper-pagination-bullet {
-        font-size: 19px;
+        font-size: 20px;
         font-weight: 600;
         color: var(--cherry);
         opacity: 1;
@@ -132,7 +130,7 @@
     .swiper-pagination-bullet-active {
         color:white;
         background: var(--cherry);
-        border: 2px solid var(--cherry);
+        border: 2.5px solid var(--cherry);
     }
 
     .next-tag{ 

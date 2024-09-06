@@ -1,7 +1,6 @@
 /*Basic Page Styling*/
-
     .nav-bar ul li:nth-of-type(4) a{
-        color:#d3d2d2;
+        color:var(--grey-n3);
     }
 
     h2{

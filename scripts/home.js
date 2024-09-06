@@ -40,8 +40,6 @@ var swiper = new Swiper(".ebooks-swiper", {
 });
 
 
-
-
 //KV Ads Swiperr//
 
 var swiper = new Swiper(".kv-ads-swiper", {
@@ -52,7 +50,7 @@ var swiper = new Swiper(".kv-ads-swiper", {
 
     breakpoints:{
         0: {
-            slidesPerView: 1, freeMode:'true', loop: true,
+            slidesPerView: 1, slidesPerGroup: 1, freeMode:'true', loop: true,
         },
 
         580: {spaceBetween:15, slidesPerView: 2, freeMode:'true', loop: false,
